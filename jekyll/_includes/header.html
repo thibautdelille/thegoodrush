@@ -1,9 +1,24 @@
 <header>
-  <nav>
-    <ul>
-      {% for(item in include.nav) %}
-        <li {% if item.name == page.name %}class="active"{% endif %}><a href="{{page.rootPath}}{{item.href}}">{{item.label}}</a></li>
-      {% endfor %}
-    </ul> 
-  </nav>
+	<div class="top-nav">
+  	<div class="page-wrapper">
+	    <ul>
+	    	<li><a href="#">Login</a></li>
+	    	<li><a href="#">Create an Account</a></li>
+	    </ul>
+  	</div>
+	</div>
+  <div class="page-wrapper">
+		<div class="logo">
+			<span class="the">the</span>
+			<span class="good">Good</span>
+			<span class="rush">Rush</span>
+		</div>
+	  <nav>
+	    <ul>
+	      {% for(item in include.nav) %}
+	        <li {% if item.name == page.name %}class="active"{% endif %}><a href="{{page.rootPath}}{{item.href}}">{{item.label}}</a></li>
+	      {% endfor %}
+	    </ul> 
+	  </nav>
+	</div>
 </header>

@@ -94,6 +94,17 @@ module.exports = function(grunt) {
             dest: 'jekyll/assets/vendors/' 
           }
         ]
+      },
+      // Copy fonts to Jekyll folder
+      fonts: {
+        files: [
+          { 
+            expand: true, 
+            cwd: './assets/fonts', 
+            src: ['./**/*.*'], 
+            dest: 'jekyll/assets/css/fonts/' 
+          }
+        ]
       }
     },
 
@@ -251,8 +262,9 @@ module.exports = function(grunt) {
   grunt.registerTask('js', ['jshint', 'modernizr', 'concat:js', 'uglify:js']);
   grunt.registerTask('vendors', ['copy:vendors']);
   grunt.registerTask('images', ['copy:images']);
+  grunt.registerTask('fonts', ['copy:fonts']);
 
-  grunt.registerTask('default', ['scss','js','images','vendors', 'jekyll']);
+  grunt.registerTask('default', ['scss','js','copy', 'jekyll']);
 
   grunt.registerTask('dev', ['connect', 'watch']);
 

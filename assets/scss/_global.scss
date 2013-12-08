@@ -1,5 +1,8 @@
 /* header */
-body{
-	width:$max-width;
+html, body{
+	background-color: $gray-lighter;
+}
+.page-wrapper{
 	margin:auto;
+	width:$max-width;
 }
