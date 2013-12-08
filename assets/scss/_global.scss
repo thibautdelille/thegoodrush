@@ -1,8 +1,10 @@
 /* header */
 html, body{
 	background-color: $gray-lighter;
+	font-family: "NewCaledoniaW01-Regular";
 }
 .page-wrapper{
 	margin:auto;
-	width:$max-width;
+	max-width:$max-width;
+	padding:0 10px;
 }
