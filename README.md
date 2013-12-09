@@ -1,4 +1,4 @@
-# The Good Rush Webite 
+# The Good Rush Website 
 this site use the [Template for Website](https://github.com/thibautdelille/site_template) using jekyll and Sass
 
 ### Install the Project
