@@ -1,40 +1,55 @@
 /* header */
 
 .logo{
-  width:180px;
+  float:left;
+  font-size:48px;
   background-color: white;
   border-radius: 50%;
-  padding:24px 0;
-  margin:16px auto;
+  padding:.25em .25em .75em;
+  margin:.25em;
   text-align: center;
   box-shadow: -1px -1px 50px 2px $gray-light;
+  span{
+    display:block;
+    line-height:1em;
+    font-size:1em;
+  }
   .the{
-    line-height:32px;
-    font-size:48px;
     font-family: 'Splendid';
-    padding:0 10px;
     color: $gray-light;
     text-shadow: 1px 1px 0 $gray;
   }
   .good{
-    line-height:32px;
-    font-size:48px;
     font-family: "NewCaledoniaW01-BlackIt";
     text-transform: uppercase;
     color: $gray-darker;
     text-shadow: -1px -1px 0 $gray-light;
   }
   .rush{
-    line-height:32px;
-    font-size:44px;
     font-family: "Chevalier$LPW00-Regular";
     text-transform: uppercase;
     color: $gray-light;
     text-shadow: 1px 1px 0 $gray-darker;
   }
-  span{
-    display:block;
-    padding:5px;
+  &.black{
+    background-color: black;
+    span{
+      color: white!important;
+      text-shadow: none!important;
+    }
+  }
+  &.white{
+    background-color: white;
+    span{
+      color: black!important;
+      text-shadow: none!important;
+    }
+  }
+  &.medium{
+    font-size:24px;
+  }
+  &.small{
+    font-size:16px;
   }
 }
 header{
