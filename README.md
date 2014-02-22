@@ -1,5 +1,6 @@
-# The Good Rush Website 
+# The Good Rush 
 this site use the [Template for Website](https://github.com/thibautdelille/site_template) using jekyll and Sass
+Just some test on creating a good rush logo in css3 
 
 ### Install the Project
  1. Run `npm install` (it use [Node](http://nodejs.org/) and [npm](https://npmjs.org/))
